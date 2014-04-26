@@ -62,8 +62,9 @@ public class LightText extends JFrame{
         save = new JMenuItem();
         font = new JMenu();
         arial = new JMenuItem();
-        arial1 = new Font("Arail", 12, 15);
+        arial1 = new Font("Arail", 15, 15);
         verdana = new JMenuItem();
+        verdana1 = new Font("Verdana", 15, 15);
         cantarell = new JMenuItem();
         cantarell1 = new Font("Cantarell", 15, 15);
         
@@ -152,11 +153,28 @@ public class LightText extends JFrame{
         jMenu2.setText("Edit");
         font.setText("Font");
         cantarell.setText("Cantarell");
-        
         font.add(cantarell);
         cantarell.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
 				jTextArea1.setFont(cantarell1);
+				
+			}
+        	
+        });
+        arial.setText("Arial");
+        font.add(arial);
+        arial.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0) {
+				jTextArea1.setFont(arial1);
+				
+			}
+        	
+        });
+        verdana.setText("Verdana");
+        font.add(verdana);
+        verdana.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0) {
+				jTextArea1.setFont(verdana1);
 				
 			}
         	
